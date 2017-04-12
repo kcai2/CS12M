@@ -1,0 +1,7 @@
+environ.c: In function ‘main’:
+environ.c:5:15: warning: unused parameter ‘argc’ [-Wunused-parameter]
+ int main (int argc, char **argv) {
+               ^
+environ.c:5:28: warning: unused parameter ‘argv’ [-Wunused-parameter]
+ int main (int argc, char **argv) {
+                            ^

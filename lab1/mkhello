@@ -1,0 +1,11 @@
+#!/bin/bash
+# $Id: mkhello.sh,v 1.1 2015-01-12 15:10:47-08 - - $
+# Author: Kevin Cai , kcai2@ucsc.edu
+
+cid hello.java
+javac hello.java
+echo Main-class: hello >Manifest
+jar cvfm hello Manifest hello.class
+chmod +x hello
+rm Manifest
+rm hello.class

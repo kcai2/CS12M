@@ -1,0 +1,93 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.1
+date	2015.02.11.21.19.50;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@# $Id$
+# Author: Kevin Cai (kcai2@@ucsc.edu)
+
+Script started on Tue 10 Feb 2015 04:28:34 PM PST
+[?1034hbash-4.1$ ./environ
+ORBIT_SOCKETDIR=/tmp/orbit-kcai2
+MANPATH=/opt/rh/devtoolset-2/root/usr/share/man:
+HOSTNAME=be-linux23.lt.ucsc.edu
+GIO_LAUNCHED_DESKTOP_FILE_PID=15388
+GNUPLOT_DEFAULT_GDFONT=LiberationSans-Regular
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+SHELL=/bin/bash
+TERM=xterm
+HISTSIZE=1000
+XDG_SESSION_COOKIE=6062dfd3f538778e1b9914bb00000028-1423610014.87995-1103577407
+PERL5LIB=/opt/rh/devtoolset-2/root//usr/lib64/perl5/vendor_perl:/opt/rh/devtoolset-2/root/usr/lib/perl5:/opt/rh/devtoolset-2/root//usr/share/perl5/vendor_perl
+IDL_DIR=/usr/local/envi/idl82
+GTK_RC_FILES=/etc/gtk/gtkrc:/afs/cats.ucsc.edu/users/v/kcai2/.gtkrc-1.2-gnome2
+cmps012b=/afs/cats.ucsc.edu/courses/cmps012b-wm
+WINDOWID=23068675
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+IMSETTINGS_MODULE=none
+PCP_DIR=/opt/rh/devtoolset-2/root
+USER=kcai2
+LD_LIBRARY_PATH=/opt/rh/devtoolset-2/root/usr/lib64:/opt/rh/devtoolset-2/root/usr/lib
+LIBGL_DRIVERS_PATH=/usr/lib64/dri:/usr/lib/dri
+GDFONTPATH=/usr/share/fonts/liberation
+GNOME_KEYRING_SOCKET=/tmp/keyring-DsZ6a9/socket
+SSH_AUTH_SOCK=/tmp/keyring-DsZ6a9/socket.ssh
+SESSION_MANAGER=local/unix:@@/tmp/.ICE-unix/14934,unix/unix:/tmp/.ICE-unix/14934
+USERNAME=kcai2
+GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/gnome-terminal.desktop
+PATH=/usr/lib64/qt-3.3/bin:/opt/rh/devtoolset-2/root/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/texlive/2012/bin/x86_64-linux:/usr/local/python3/bin:/usr/local/codebench/bin:/afs/cats.ucsc.edu/users/v/kcai2/bin:.:/afs/cats.ucsc.edu/courses/cmps012b-wm/bin:/afs/cats.ucsc.edu/courses/cmps012b-wm/bin:/afs/cats.ucsc.edu/courses/cmps012b-wm/bin:/afs/cats.ucsc.edu/courses/cmps012b-wm/bin:/afs/cats.ucsc.edu/courses/cmps012b-wm/bin:/afs/cats.ucsc.edu/courses/cmps012b-wm/bin
+MAIL=/var/spool/mail/kcai2
+DESKTOP_SESSION=gnome
+QT_IM_MODULE=xim
+PWD=/afs/cats.ucsc.edu/users/v/kcai2/private/cmps012m/lab5
+XMODIFIERS=@@im=none
+GDM_KEYBOARD_LAYOUT=us
+KDE_IS_PRELINKED=1
+LANG=en_US.UTF-8
+GNOME_KEYRING_PID=14922
+GDM_LANG=en_US.UTF-8
+KDEDIRS=/usr
+EXELIS_DIR=/usr/local/envi
+GDMSESSION=gnome
+HISTCONTROL=ignoredups
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+KRB5CCNAME=FILE:/tmp/krb5cc_201052_Q8AQmP
+HOME=/afs/cats.ucsc.edu/users/v/kcai2
+SHLVL=3
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LOGNAME=kcai2
+PYTHONPATH=/opt/rh/devtoolset-2/root/usr/lib64/python2.6/site-packages:/opt/rh/devtoolset-2/root/usr/lib/python2.6/site-packages
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-ZXIdVv0QGS,guid=203adcfd73a7dcd7ae9842c2000a7cd6
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+WINDOWPATH=1
+INFOPATH=/opt/rh/devtoolset-2/root/usr/share/info:/usr/local/texlive/2012/texmf/doc/info
+DISPLAY=:0.0
+G_BROKEN_FILENAMES=1
+COLORTERM=gnome-terminal
+XAUTHORITY=/var/run/gdm/auth-for-kcai2-5MbTtC/database
+_=./environ
+bash-4.1$ exit
+exit
+
+Script done on Tue 10 Feb 2015 04:28:45 PM PST
+@

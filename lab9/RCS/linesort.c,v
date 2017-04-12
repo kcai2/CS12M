@@ -1,0 +1,88 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.2
+date	2015.03.12.05.03.04;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2015.03.09.23.49.19;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@// $Id: linesort.c,v 1.1 2015-03-09 16:49:19-07 - - $
+// Author: Kevin Cai (kcai2@@ucsc.edu) & Ahmadullah Tokhi (atokhi)
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "inssort.h"
+
+int compar (const void *left, const void *right) {
+   return  strcmp(*(char**)left, *(char**)right);
+}
+
+int main() {
+   char *array[0x1000];
+   int nelem = 0;
+   int index;
+   
+   for (index = 0; index < sizeof(array); index++) {
+      char buffer[0x1000];
+      int num = scanf("%s", buffer);
+      if (num != 1 || num == EOF || nelem >= 4096) break;
+      array[index] = strdup(buffer);
+      nelem++;
+   }
+   printf("\n");
+   
+   inssort(array, nelem, sizeof(char*), compar);
+   for (index = 0; index < nelem; index++) {
+      printf("%s\n", array[index]);
+      free(array[index]);
+   }
+   return EXIT_SUCCESS;
+}
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id$
+d21 3
+a23 4
+      if(scanf("%s", buffer) != 1) {
+         //free(buffer);
+         break;
+      }
+a24 6
+      
+      //if(buffer[strlen(buffer) - 1] == '\n') {
+      //   buffer[strlen(buffer) - 1 ] = '\0\';
+      //}
+      array[index] = strdup(buffer);
+      //free(buffer);
+a32 1
+   //free(array);
+@

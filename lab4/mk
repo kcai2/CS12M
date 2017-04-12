@@ -1,0 +1,3 @@
+#!/bin/sh
+#$Id: mk,v 1.1 2015-02-09 15:54:06-08 - - $
+gcc -g -O0 -Wall -Wextra -std=gnu99 cmatch.c -o cmatch

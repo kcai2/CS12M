@@ -1,0 +1,9 @@
+#!/bin/bash
+# $Id$
+# Author: Kevin Cai , kcai2@ucsc.edu
+hello >test1.out
+hello 2>test1.err
+echo $? >test1.status
+hello world >test2.out
+hello world 2>test2.err
+echo $? >test2.status

@@ -1,0 +1,11 @@
+cmatch.c: In function ‘main’:
+cmatch.c:65:10: warning: implicit declaration of function ‘catbyline’ [-Wimplicit-function-declaration]
+          catbyline(stdin, STDIN_NAME);
+          ^
+cmatch.c: At top level:
+cmatch.c:83:6: warning: conflicting types for ‘catbyline’ [enabled by default]
+ void catbyline (FILE *input, char *theword, char *filename, options opts) {
+      ^
+cmatch.c:65:10: note: previous implicit declaration of ‘catbyline’ was here
+          catbyline(stdin, STDIN_NAME);
+          ^

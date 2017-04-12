@@ -1,0 +1,62 @@
+# $Id: part01.typescript,v 1.1 2015-02-11 13:12:40-08 - - $
+# Author: Kevin Cai (kcai2@ucsc.edu)
+
+Script started on Mon 09 Feb 2015 04:09:19 PM PST
+[?1034hbash-4.1$ mk uninit.c
+CSOURCE=*.c EXECBIN=*
++ cid + '*.c'
++ checksource '*.c'
+checksource: *.c: No such file or directory
+checksource: TOTAL COMPLAINTS: 1
++ gcc -g -O0 -Wall -Wextra -std=gnu99 '*.c' -o '*.c.log' mk part01.typescript uninit -lm
++ tee '*.c.log'
+gcc: error: *.c: No such file or directory
++ set +x
+============================================================
+bash-4.1$ valgrind uninit
+==10431== Memcheck, a memory error detector
+==10431== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==10431== Using Valgrind-3.9.0 and LibVEX; rerun with -h for copyright info
+==10431== Command: uninit
+==10431== 
+==10431== Conditional jump or move depends on uninitialised value(s)
+==10431==    at 0x38F0245688: vfprintf (in /lib64/libc-2.12.so)
+==10431==    by 0x38F024F189: printf (in /lib64/libc-2.12.so)
+==10431==    by 0x400544: main (uninit.c:8)
+==10431== 
+pointer=(nil)
+==10431== Use of uninitialised value of size 8
+==10431==    at 0x400549: main (uninit.c:9)
+==10431== 
+==10431== Invalid read of size 4
+==10431==    at 0x400549: main (uninit.c:9)
+==10431==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==10431== 
+==10431== 
+==10431== Process terminating with default action of signal 11 (SIGSEGV)
+==10431==  Access not within mapped region at address 0x0
+==10431==    at 0x400549: main (uninit.c:9)
+==10431==  If you believe this happened as a result of a stack
+==10431==  overflow in your program's main thread (unlikely but
+==10431==  possible), you can try to increase the size of the
+==10431==  main thread stack using the --main-stacksize= flag.
+==10431==  The main thread stack size used in this run was 10485760.
+==10431== 
+==10431== HEAP SUMMARY:
+==10431==     in use at exit: 0 bytes in 0 blocks
+==10431==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==10431== 
+==10431== All heap blocks were freed -- no leaks are possible
+==10431== 
+==10431== For counts of detected and suppressed errors, rerun with: -v
+==10431== Use --track-origins=yes to see where uninitialised values come from
+==10431== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 6 from 6)
+Segmentation fault (core dumped)
+bash-4.1$ echo%[K $?
+139
+bash-4.1$ pstatus 139
+pstatus: 0x008B TERMINATED 11: Segmentation fault (core dumped)
+bash-4.1$ exit
+exit
+
+Script done on Mon 09 Feb 2015 04:09:42 PM PST
